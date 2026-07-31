@@ -15,23 +15,6 @@ class _HomepageState extends State<Homepage> {
   final _txtnumero2 = TextEditingController();
   final _txtresultado = TextEditingController();
 
-  void calcular(String operacion) {
-    double numero1 = double.parse(_txtnumero1.text);
-    double numero2 = double.parse(_txtnumero2.text);
-
-    double resultado = operacion == '+'
-        ? numero1 + numero2
-        : operacion == '-'
-        ? numero1 - numero2
-        : operacion == '*'
-        ? numero1 * numero2
-        : operacion == '/'
-        ? numero1 / numero2
-        : 0;
-
-    _txtresultado.text = resultado.toString();
-  }
-
   void suma() {
     double numero1 = double.parse(_txtnumero1.text);
     double numero2 = double.parse(_txtnumero2.text);
