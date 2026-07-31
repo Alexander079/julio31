@@ -105,7 +105,7 @@ class _HomepageState extends State<Homepage> {
               child: TextFormField(
                 controller: _txtresultado,
                 decoration: InputDecoration(
-                  hintText: "resultado",
+                  hintText: "Resultado",
                   labelText: "resultado",
                   border: OutlineInputBorder(),
                 ),
